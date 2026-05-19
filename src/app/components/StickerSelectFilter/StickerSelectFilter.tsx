@@ -8,9 +8,13 @@ const LABELS: Record<string, string> = {
   emoticons: 'Emoticons',
   craft: 'Craft',
   '3Dstickers': '3D Grain',
+  florals: 'Florals',
   hand: 'Hands',
   stickers: 'Stickers'
 };
+
+const labelForGroup = (group: string) =>
+  LABELS[group] ?? group.charAt(0).toUpperCase() + group.slice(1);
 
 type StickerSelectFilterProps = {
   onChange: (group: string) => void;
@@ -34,7 +38,7 @@ const StickerSelectFilter = ({ onChange }: StickerSelectFilterProps) => {
       <option value="">All</option>
       {availableGroups.map((group) => (
         <option value={group} key={group}>
-          {LABELS[group]}
+          {labelForGroup(group)}
         </option>
       ))}
     </Select>

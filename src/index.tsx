@@ -16,15 +16,7 @@ import App from './app/App';
 // Configuration
 // ============================================================================
 
-// Engine configuration (see https://img.ly/docs/cesdk/engine/api/configuration/)
 const engineConfig = {
-  // License key (required for production)
-  // license: 'YOUR_LICENSE_KEY',
-
-  // Base URL for CE.SDK assets (for self-hosted deployments)
-  // baseURL: '/assets/',
-
-  // Feature flags
   featureFlags: {
     preventScrolling: true
   }
