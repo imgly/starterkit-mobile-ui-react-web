@@ -6,6 +6,7 @@ import { useSinglePageFocus } from '../hooks/UseSinglePageFocus';
 import { caseAssetPath } from '../../imgly/utils';
 import { SelectionProvider } from '../hooks/UseSelection';
 
+
 interface SelectedBlock {
   id: number;
   type: string;
