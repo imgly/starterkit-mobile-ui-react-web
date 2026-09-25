@@ -13,9 +13,9 @@ export function hexToRgba(hex: string): RGBAColor {
   }
   const alphaHex = hex.length === 9 ? hex.slice(7, 9) : 'FF';
 
-  if (![7, 9].includes(hex.length)) {
+  if (!/^#[0-9a-fA-F]{6}(?:[0-9a-fA-F]{2})?$/.test(hex)) {
     throw new Error(
-      'hexToRgba expects a hex string of length 7 (including #).' + hex
+      'hexToRgba expects a hex string of length 7 or 9 (including #): ' + hex
     );
   }
 
