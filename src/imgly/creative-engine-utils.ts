@@ -89,7 +89,7 @@ export const autoPlaceBlockOnPage = (
   engine.block.setPositionXMode(block, 'Absolute');
   engine.block.setPositionX(block, posX);
 
-  const pageHeight = engine.block.getWidth(page);
+  const pageHeight = engine.block.getHeight(page);
   const posY =
     pageHeight * (config.basePosY + Math.random() * config.randomPosY);
   engine.block.setPositionYMode(block, 'Absolute');
@@ -98,32 +98,3 @@ export const autoPlaceBlockOnPage = (
   engine.block.setSelected(block, true);
   engine.editor.addUndoStep();
 };
-
-export function getImageSize(url: string): Promise<{
-  width: number;
-  height: number;
-}> {
-  const img = document.createElement('img');
-
-  const promise = new Promise<{ width: number; height: number }>(
-    (resolve, reject) => {
-      img.onload = () => {
-        // Natural size is the actual image size regardless of rendering.
-        // The 'normal' `width`/`height` are for the **rendered** size.
-        const width = img.naturalWidth;
-        const height = img.naturalHeight;
-
-        // Resolve promise with the width and height
-        resolve({ width, height });
-      };
-
-      // Reject promise on error
-      img.onerror = reject;
-    }
-  );
-
-  // Setting the source makes it start downloading and eventually call `onload`
-  img.src = url;
-
-  return promise;
-}
