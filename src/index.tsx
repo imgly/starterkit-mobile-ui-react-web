@@ -42,9 +42,3 @@ main().catch((error) => {
   console.error('Failed to initialize application:', error);
 });
 
-// Debug access in development (optional)
-declare global {
-  interface Window {
-    engine?: CreativeEngine;
-  }
-}
