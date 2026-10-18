@@ -65,8 +65,8 @@ npm run build
 src/
 ├── app/                          # Demo application
 ├── imgly/
-│   ├── color-utilities.ts
-│   ├── creative-engine-utils.ts
+│   ├── ColorUtilities.ts
+│   ├── CreativeEngineUtils.ts
 │   ├── index.ts                  # Editor initialization function
 │   ├── upload.ts
 │   └── utils.ts                  # Utility functions
@@ -147,6 +147,9 @@ This separation ensures the engine integration is reusable and testable independ
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run check:syntax` - Type check TypeScript
+- `npm run check:lint` - Lint code
+- `npm run check:format` - Check code formatting
+- `npm run fix:all` - Fix linting and formatting issues
 
 ## Browser Support
 
