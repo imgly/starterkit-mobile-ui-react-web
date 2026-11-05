@@ -1,6 +1,7 @@
 {
   "name": "starterkit-mobile-ui",
   "version": "1.0.0",
+  "type": "module",
   "description": "CE.SDK Mobile UI Starterkit - A mobile-optimized editing interface built with React",
   "scripts": {
     "dev": "vite",
@@ -10,7 +11,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.24.0",
-    "@cesdk/engine": "^1.85.2",
+    "@cesdk/engine": "^1.86.0-rc.0",
+    "@fontsource-variable/inter": "^5.3.0",
     "classnames": "^2.3.2",
     "lodash": "^4.17.21",
     "react": "^18.3.1",
@@ -25,9 +27,9 @@
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@types/react-slider": "^1.3.6",
-    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-react": "^6.1.2",
     "typescript": "^5.0.0",
-    "vite": "^6.0.3",
-    "vite-plugin-svgr": "^4.2.0"
+    "vite": "^8.3.4",
+    "vite-plugin-svgr": "^5.2.0"
   }
 }
