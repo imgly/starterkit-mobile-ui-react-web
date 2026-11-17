@@ -29,6 +29,10 @@ Easily build custom mobile UIs and provide a seamless design editing experience 
 - **Layer Management**: Select, move, resize, and delete elements
 - **Undo/Redo**: Full history support with visual feedback
 
+## Features and This Kit
+
+This kit builds its own UI on the engine, so `cesdk.features` does not apply to it: features drive only the CE.SDK UI. Gate the controls in your own code.
+
 ## Quick Start
 
 ### Installation
