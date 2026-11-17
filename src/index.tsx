@@ -11,7 +11,6 @@ import { createRoot } from 'react-dom/client';
 import type CreativeEngine from '@cesdk/engine';
 
 import App from './app/App';
-import '@fontsource-variable/inter';
 
 // ============================================================================
 // Configuration
