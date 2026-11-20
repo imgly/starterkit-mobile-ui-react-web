@@ -1,4 +1,4 @@
-import { RGBAColor } from '@cesdk/engine';
+import type { RGBAColor } from '@cesdk/engine';
 
 // Convert a hex color string to an RGBA color object
 export function hexToRgba(hex: string): RGBAColor {

@@ -11,7 +11,7 @@ export const zoomToSelectedText = async (
   paddingTop = 0,
   paddingBottom = 0
 ) => {
-  const canvasBounding = engine.element.getBoundingClientRect();
+  const canvasBounding = engine.element!.getBoundingClientRect();
   const canvasHeight = canvasBounding.height * window.devicePixelRatio;
   const overlapBottom = Math.max(
     (canvasBounding.top +
